@@ -139,12 +139,9 @@ export function Refree() {
     }
 
     function resetBoard() {
-        setBoard(() => {
-            updatePlayer(PlayerType.Me)
+        updatePlayer(PlayerType.Me)
             checkmateModelRef.current.classList.add("hidden")
-            return initialBoard.clone()
-        }
-        )
+        setBoard(initialBoard.clone())
     }
 
     return (

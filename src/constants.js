@@ -48,4 +48,5 @@ initialPiceses.push(new Pices(new Position(6, 0), PicesType.Knight, PlayerType.M
 initialPiceses.push(new Pices(new Position(7, 0), PicesType.Rook, PlayerType.Me, false))
 
 const initialBoard = new Board(initialPiceses, 1);
+initialBoard.calculateAllMoves()
 export { initialBoard }
